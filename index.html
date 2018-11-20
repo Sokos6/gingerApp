@@ -3,7 +3,7 @@
  
 <head>
   <meta charset="utf-8">
-  <title>Styling in React</title>
+  <title>gingerApp</title>
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
@@ -20,11 +20,11 @@
   <div id="container"></div>
  
 <script type="text/babel">
-  var destination = document.querySelector("#container");
+  const destination = document.querySelector("#container");
 
   class Letter extends React.Component {
     render() {
-      var letterStyle = {
+      const letterStyle = {
       padding: 10,
       margin: 10,
       backgroundColor: this.props.bgcolor,

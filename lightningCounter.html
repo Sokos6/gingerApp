@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dealing with State</title>
+    <title>Lightning Counter</title>
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
@@ -35,12 +35,12 @@
             }
 
             render() {
-                var counterStyle = {
+                const counterStyle = {
                     color: "#66FFFF",
                     fontSize: 50
                 };
 
-                var count = this.state.strikes.toLocaleString();
+                const count = this.state.strikes.toLocaleString();
 
                 return (
                 <h1 style={counterStyle}>{count}</h1>
@@ -50,12 +50,12 @@
  
     class LightningCounterDisplay extends React.Component {
       render() {
-          var commonStyle = {
+          const commonStyle = {
               margin: 0,
               padding: 0
           };
 
-        var divStyle = {
+        const divStyle = {
           width: 250,
           textAlign: "center",
           backgroundColor: "black",
@@ -65,7 +65,7 @@
           borderRadius: 10
         };
 
-        var textStyles = {
+        const textStyles = {
             emphasis: {
                 fontSize: 38,
                 ...commonStyle
